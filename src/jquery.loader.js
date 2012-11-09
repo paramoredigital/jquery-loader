@@ -5,6 +5,12 @@
  *
  * By Jesse Bunch on November 8, 2012
  */
+
+// @todo Check to see if the script is loaded prior to loading it again
+// @todo Handle errors better
+// @todo Caching option/override
+// @todo Allow complete override of script fetch URL http://whatever.com/?path={PATH}&act=45
+
 (function ($)
 {
     /**
