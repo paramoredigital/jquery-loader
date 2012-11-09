@@ -32,6 +32,11 @@
             loadInSerial(scripts, options, finalCallback);
     };
 
+    $.loader.setBasePath = function(newPath)
+    {
+        defaultOptions.basePath = newPath;
+    };
+
     /**
      * @param {Object} scripts
      * @param {Object} options

@@ -12,7 +12,9 @@
 
     $(function ()
     {
-        $.loader(["test1", "test2", "test3", "test4"], {basePath: "./fixtures/"}, function ()
+        $.loader.setBasePath("./fixtures/");
+
+        $.loader(["test1", "test2", "test3", "test4"], {}, function ()
         {
             console.log("Everything has loaded!");
         });
