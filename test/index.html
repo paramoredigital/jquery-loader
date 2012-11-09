@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Loader Test</title>
+</head>
+<body>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="../src/jquery.loader.js"></script>
+
+<script type="text/javascript">
+
+    $(function ()
+    {
+        $.loader(["test1", "test2", "test3", "test4"], {basePath: "./fixtures/"}, function ()
+        {
+            console.log("Everything has loaded!");
+        });
+    });
+
+</script>
+
+</body>
+</html>
